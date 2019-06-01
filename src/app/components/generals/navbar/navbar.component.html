@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand"   ></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class ="center">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item" [ngClass]="{active: vista=='principio'}">
+        <a class="nav-link"(click)="principio()"   >Principio</a>
+      </li>
+      <li class="nav-item" [ngClass]="{active: vista == 'agregar'}">
+        <a class="nav-link"(click)="agregar()"   >Formulario</a>
+      </li>
+      <li class="nav-item" [ngClass]="{active: vista == 'tabla'}">
+        <a class="nav-link"(click)="tabla()"   >Tabla</a>
+      </li>
+      <li class="nav-item" [ngClass]="{active: vista == 'Eliminar'}">
+        <a class="nav-link"(click)="Eliminar()"   >Eliminar</a>
+      </li>
+    
+    </ul>
+  
+  </div></div>
+</nav>

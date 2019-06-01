@@ -1,0 +1,54 @@
+<table class="table thead-dark col-md-3 col-lg-2 col-sm-6">
+  <thead  >
+    <tr >
+      <th >
+        Id
+      </th>
+      <th>
+        Nombre
+      </th>
+      <th>
+        usuario
+      </th>
+      <th>
+        telefono
+      </th>
+      <th>
+        direccion
+      </th>
+      <th>
+        correo
+      </th>
+      <th>
+        foto
+      </th>
+      </tr>
+  </thead>
+  <tbody *ngFor="let item of datos">
+
+    <tr>
+    
+      <td>
+        {{item.id}}
+      </td>
+      <td>
+       {{item.nombre}}
+      </td>
+      <td>
+        {{item.usuario}}
+      </td>
+      <td>
+        {{item.telefono}}
+      </td>
+      <td>
+        {{item.direccion}}
+      </td>
+      <td>
+        {{item.email}}
+      </td>
+      <td>
+        <img src="{{item.foto}}" alt=""style="width: 40px; height: 40px;">
+      </td>
+      
+    </tr>
+  </tbody>
